@@ -8,5 +8,6 @@ import { IonAlert, IonButton, IonHeader, IonToolbar, IonTitle, IonContent } from
   imports: [IonAlert, IonButton, IonHeader, IonToolbar, IonTitle, IonContent],
 })
 export class HomePage {
-  alertButtons = ['Yes', 'No'];
+  yesNoButtons = ['Yes', 'No'];
+  dismissButton = ['Dismiss'];
 }

@@ -12,13 +12,21 @@
   </ion-header>
 
   <div id="container">
-    <ion-button id="present-alert">Click Me</ion-button>
+    <ion-button id="present-alert-yesno">Present Yes No Alert</ion-button>
+    <ion-button id="present-alert-dismiss">Present Dismiss Alert</ion-button>
     <ion-alert
-      trigger="present-alert"
+      trigger="present-alert-yesno"
       header="A Short Title Is Best"
       subHeader="A Sub Header Is Optional"
       message="A message should be a short, complete sentence."
-      [buttons]="alertButtons"
+      [buttons]="yesNoButtons"
+    ></ion-alert>
+    <ion-alert
+      trigger="present-alert-dismiss"
+      header="A Short Title Is Best"
+      subHeader="A Sub Header Is Optional"
+      message="A message should be a short, complete sentence."
+      [buttons]="dismissButton"
     ></ion-alert>
   </div>
 </ion-content>
